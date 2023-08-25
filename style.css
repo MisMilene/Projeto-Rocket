@@ -1,7 +1,8 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+    /*
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box; */
 }
 
 :root {
@@ -39,9 +40,11 @@ color:var(--text-color);
 
 #container {
 
-width: 360px;
+width: 100%;
+max-width: 588px;
 margin: 56px auto 0px;
 padding: 0% 24px;
+
 }
 
 #profile {
@@ -110,9 +113,9 @@ ul {
 
 list-style:none;
 display: flex;
-flex-direction:column;
+flex-direction: column;
 gap: 16px;
-padding: 24px 0%;
+padding: 24px 0px;
 
 }
 
@@ -130,17 +133,17 @@ background:var(--surface-color);
 backdrop-filter: blur(4px);
 -webkit-backdrop-filter:blur(4px);
 text-decoration:none;
-font-weight: 500px;
-
+font-weight: 500;
+transition: backgrond 0.2s;
 }
 
 /* peseudo-selector*/
 
 ul li a:hover {
 
-    border: 1.5px solid white;
+    border: 1.5px solid var(--text-color);
     background:var(--surface-color-houver);
-    transition: backgrond 0.2s;
+   
 }
 
 
